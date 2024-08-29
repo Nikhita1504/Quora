@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>
+            Quora
+        </h1>
+    </div>
+    
+    <a href="http://localhost:3000/posts/new" class="create-post">Create new post</a>
+
+
+
+
+    <div class="post-container">
+    <% for(let post of posts ){ %>
+        <div class="post">
+            <h3>
+                <%= post.username %>
+            </h3>
+    
+            <h4>
+                <%= post.content %>
+            </h4>
+
+            <br>
+           
+            
+            <a href="http://localhost:3000/posts/<%= post.id  %>" class="show-post">See in detail</a>
+            <a href="http://localhost:3000/posts/<%= post.id %>/edit" class="show-post" >Edit post</a>
+            <form action="/posts/<%= post.id  %>/?_method=DELETE" method="post">
+                <button class="delete-btn">Delete post</button>
+            </form>
+            <br>
+            <img src=<%= post.img  %> alt="">
+            <br>
+        </div>
+        <% } %>
+
+    </div>
+</body>
+
+</html>

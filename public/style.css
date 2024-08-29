@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+
+}
+
+body{
+    background-color: black;
+    color: white;
+   /* border: 1px solid white; */
+}
+.heading{
+ line-height: 3rem;
+ padding: 0.5rem;
+
+ background-color: rgb(55, 54, 54);
+}
+
+.heading h1{
+    font-size: 2rem;
+    margin-left: 6.2rem;
+    color: red;
+}
+.post-container{
+    /* border: 1px solid green; */
+    padding: 2rem;
+    margin-left: 5rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.post{
+    border-radius: 10px;
+    height: 400px;
+    background-color: rgb(55, 54, 54);
+    width: 600px;
+    padding: 1rem;
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+
+}
+.create-post{
+color: white;
+text-decoration: none;
+position: relative;
+left: 40.625rem;
+top: 1rem ;
+border: 1px solid white;
+padding: 0.5rem;
+border-radius: 20px;
+
+}
+.show-post{
+color: white;
+text-decoration: none;
+/* position: relative; */
+
+
+border: 1px solid white;
+padding: 0.5rem;
+border-radius: 20px;
+
+}
+.delete-btn{
+    position: absolute;
+    top: 4.1rem;
+    left: 12.4rem;
+    font-size: 1rem;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    background-color: transparent;
+padding: 0.5rem;
+}
+img{
+    object-fit: cover;
+   height: 300px;
+   width: 350px; 
+
+}
